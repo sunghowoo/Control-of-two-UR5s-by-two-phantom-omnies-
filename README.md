@@ -5,11 +5,11 @@
 #This project was designed during the summer internship of the University of Manchester in 2019. This user manual was simply described for the beginner of ROS.  Some problems can occur when you do catkin_make if you do not download some necessary dependencies. So you are required to do some trouble shooting but everything is on GOOGLE. 
 
 *Environment:
--Ubuntu 16.04
--ROS Kinetic 
--UR5 
--Two LAN mode phantom Omnis ( 2016.1-1 driver) 
--Two laptops (ROS Network)
+%Ubuntu 16.04
+%ROS Kinetic 
+%UR5 
+%Two LAN mode phantom Omnis ( 2016.1-1 driver) 
+%Two laptops (ROS Network)
 
 #Demonstration vedio :  https://youtu.be/ZUHPw8gEjiA
 
