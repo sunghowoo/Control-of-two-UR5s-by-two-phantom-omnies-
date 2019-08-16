@@ -18,6 +18,7 @@ Before you launch the files you should make sure that every folder work well by 
 #Auto necessary dependency installation:
 rosdep update
 rosdep install --rosdistro kinetic --ignore-src --from-paths src
+# download the geomagic driver:  https://drive.google.com/file/d/1ErvHn4CXLybBkVeQWXFGM4y8BREB9kmH/view?usp=sharing
 
 #Launch Process 
 -- Connection of Geomagic phantom haptic
