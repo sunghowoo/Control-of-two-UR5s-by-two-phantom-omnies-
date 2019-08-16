@@ -1,6 +1,6 @@
 # Control-of-two-UR5s-by-two-phantom-omnies-
 
-# University of Manchester - Sungho Woo, Vivi pazos.
+ University of Manchester - Sungho Woo, Vivi pazos.
 
 #This project was designed during the summer internship of the University of Manchester in 2019. This user manual was simply described for the beginner of ROS.  Some problems can occur when you do catkin_make if you do not download some necessary dependencies. So you are required to do some trouble shooting but everything is on GOOGLE. 
 
@@ -19,6 +19,8 @@ Before you launch the files you should make sure that every folder work well by 
 rosdep update
 rosdep install --rosdistro kinetic --ignore-src --from-paths src
 
+download the geomagic driver:  https://drive.google.com/file/d/1ErvHn4CXLybBkVeQWXFGM4y8BREB9kmH/view?usp=sharing
+
 #Launch Process 
 -- Connection of Geomagic phantom haptic
 1. install the haptic driver in geomagic_touch_device_driver_2016.1-1-amd64 
@@ -33,4 +35,4 @@ rosdep install --rosdistro kinetic --ignore-src --from-paths src
 #To use both UR5 arms you should use the ROS connection which uses a master computer and slavery computer.  you need to correspond both computer network IP by using [gedit .bashrc]. This part needs little knowledge of ROS.  Change the topic of the slavery phantom omni from [geomagic1] to [geomagic] in omni.cpp . Then type:  rosrun summer_gazebo send_summer1.py on the slavery computer to avoid the interruption of the topics. Force feedback is also applied to launch on the slavery computer like the same process above( check the topic).
 
 
-# download the geomagic driver:  https://drive.google.com/file/d/1ErvHn4CXLybBkVeQWXFGM4y8BREB9kmH/view?usp=sharing
+
