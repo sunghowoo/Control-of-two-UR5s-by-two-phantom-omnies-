@@ -18,7 +18,6 @@ Before you launch the files you should make sure that every folder work well by 
 #Auto necessary dependency installation:
 rosdep update
 rosdep install --rosdistro kinetic --ignore-src --from-paths src
-# download the geomagic driver:  https://drive.google.com/file/d/1ErvHn4CXLybBkVeQWXFGM4y8BREB9kmH/view?usp=sharing
 
 #Launch Process 
 -- Connection of Geomagic phantom haptic
@@ -33,3 +32,5 @@ rosdep install --rosdistro kinetic --ignore-src --from-paths src
 
 #To use both UR5 arms you should use the ROS connection which uses a master computer and slavery computer.  you need to correspond both computer network IP by using [gedit .bashrc]. This part needs little knowledge of ROS.  Change the topic of the slavery phantom omni from [geomagic1] to [geomagic] in omni.cpp . Then type:  rosrun summer_gazebo send_summer1.py on the slavery computer to avoid the interruption of the topics. Force feedback is also applied to launch on the slavery computer like the same process above( check the topic).
 
+
+# download the geomagic driver:  https://drive.google.com/file/d/1ErvHn4CXLybBkVeQWXFGM4y8BREB9kmH/view?usp=sharing
